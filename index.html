@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQD Playing Music</title>
+    <link rel="shortcut icon" href="#">
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <div class = 'playmusic'>
+        <div class = 'playing'>
+            <div class = 'iplay'>
+                <div class = 'picture'></div>
+                <div class = 'detail'>
+                    <h1></h1>
+                    <p></p>
+                </div>               
+            </div>
+
+            <div class = 'progress-area'>
+                <div class = 'timer'>
+                    <div class = 'begin'>03:03</div>
+                    <div class = 'end'>05:05</div>
+                </div>
+                <div class = 'progress-bar'>
+                    <div class = 'progress'></div>
+                </div>
+            </div>
+
+            <div class = 'control'>
+                <span id = 'openlist' class="material-symbols-rounded active">
+                    library_music
+                </span>
+                <span id= 'prev' class="material-symbols-rounded">
+                    skip_previous
+                </span>
+                <span id = 'play-pause' class="material-symbols-rounded">
+                    play_circle
+                </span>
+                <span id = 'next' class="material-symbols-rounded">
+                    skip_next
+                </span>
+                <span id = 'song-flow' class="material-symbols-rounded">
+                    repeat
+                </span>
+
+            </div>
+
+        </div>
+        <div class = 'playlist'>
+
+        </div>
+        <audio class = 'audio' src = ''></audio>
+    </div>
+    <script src = 'main.js'></script>
+</body>
+</html>

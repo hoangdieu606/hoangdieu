@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #c7a6da 25%, #ffa3c5 100%);
+  min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  font: 16px/20px 'Poppins',sans-serif;
+}
+
+
+.playmusic {
+  
+  min-height: 100vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+}
+.playing {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  border: 1px solid;
+}
+
+.iplay {
+  min-height: 80vh;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid;
+}
+.picture {
+  height: 220px;
+  aspect-ratio: 1;
+  margin: 35px auto;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.detail {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+
+.detail h1 {
+  font-size: 2rem;
+  line-height: 32px;
+  color: #666;
+  
+}
+.detail p {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.progress-area {
+  height: 10%;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e7e7e7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #c7a6da 0%, #ffa3c5 75%);
+  width: 0%;
+  border-radius: 3px;
+  pointer-events: none;
+  position: relative;
+}
+.progress::after {
+  position: absolute;
+  content:'';
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #fd9bbf;
+  opacity: 0;
+  right: -3px;
+
+}
+
+.progress-bar:hover .progress::after {
+  opacity: 1;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+  color: #333;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  padding: 0 18px;
+}
+
+.control.active {
+  background: linear-gradient(90deg, #c7a6da 50%, #ffa3c5 100%);
+}
+
+.control.active .material-symbols-rounded{
+  background: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.material-symbols-rounded {
+  font-size: 2rem;
+  user-select: none;
+  background: -webkit-linear-gradient(90deg, #ff86b2 25%, #bc77e4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+
+#play-pause {
+  font-size: 3.5rem;
+}
+
+.playlist {
+  position: absolute;
+  bottom: 20%;
+  height: 0;
+  width: 100%;
+  max-width: 400px;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: all .5s ease;
+}
+
+.playlist::-webkit-scrollbar {
+  display: none;
+}
+
+.song {
+  display: flex;
+  background: linear-gradient(90deg, #c7a6da 50%, #ffa3c5 100%);
+  color: #fff;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(225,225,225);
+}
+
+.song:hover {
+  background: linear-gradient(90deg, #c7a6da 50%, #ffa3c5 100%);
+  color: #fff;
+}
+.song .thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.song .lala {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  line-height: 40px;
+  font-size: .9rem;
+  align-items: center;
+}
+.song .body {
+  flex: 1;
+  padding: 0 15px;
+  font-size: 0.8rem;
+}
+
+.song h3 {
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.sonlasi {
+  height: 100%;
+  width: 5px;
+  border-radius: 3px;
+  margin: 0 2px;
+  background: linear-gradient(180deg, #fff 50%, #ffa3c5 100%);
+  animation: sonlasi 1.2s linear infinite;
+}
+
+@keyframes sonlasi {
+  50% {height: 20%;}
+  100% {height: 100%;}
+}
+
+.sonlasi:nth-child(2) {animation-delay: .3s;}
+.sonlasi:nth-child(3) {animation-delay: .6s;}
+.sonlasi:nth-child(4) {animation-delay: .3s;}
+
+/* Remove animations for those who've turned them off */
