@@ -23,40 +23,45 @@
                 </div>               
             </div>
 
-            <div class = 'progress-area'>
-                <div class = 'timer'>
-                    <div class = 'begin'>03:03</div>
-                    <div class = 'end'>05:05</div>
+            <div class = 'fplay'>
+                <div class = 'progress-area'>
+                    <div class = 'timer'>
+                        <div class = 'begin'>03:03</div>
+                        <div class = 'end'>05:05</div>
+                    </div>
+                    <div class = 'progress-bar'>
+                        <div class = 'progress'></div>
+                    </div>
                 </div>
-                <div class = 'progress-bar'>
-                    <div class = 'progress'></div>
+    
+                <div class = 'control'>
+                    <span id = 'openlist' class="material-symbols-rounded active">
+                        library_music
+                    </span>
+                    <span id= 'prev' class="material-symbols-rounded">
+                        skip_previous
+                    </span>
+                    <span id = 'play-pause' class="material-symbols-rounded">
+                        play_circle
+                    </span>
+                    <span id = 'next' class="material-symbols-rounded">
+                        skip_next
+                    </span>
+                    <span id = 'song-flow' class="material-symbols-rounded">
+                        repeat
+                    </span>
+    
                 </div>
+                <audio class = 'audio' src = ''></audio>
             </div>
 
-            <div class = 'control'>
-                <span id = 'openlist' class="material-symbols-rounded active">
-                    library_music
-                </span>
-                <span id= 'prev' class="material-symbols-rounded">
-                    skip_previous
-                </span>
-                <span id = 'play-pause' class="material-symbols-rounded">
-                    play_circle
-                </span>
-                <span id = 'next' class="material-symbols-rounded">
-                    skip_next
-                </span>
-                <span id = 'song-flow' class="material-symbols-rounded">
-                    repeat
-                </span>
-
-            </div>
+            
 
         </div>
         <div class = 'playlist'>
 
         </div>
-        <audio class = 'audio' src = ''></audio>
+        
     </div>
     <script src = 'main.js'></script>
 </body>
