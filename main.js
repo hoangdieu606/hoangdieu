@@ -216,8 +216,9 @@ const app = {
 
         openList.onclick =f=>{
             playList.style.height =
-            playList.style.height=='80%' ? 0 : '80%'
-            $('.control').classList.toggle('active')           
+            playList.style.height=='75%' ? 0 : '75%'
+           // $('.control').classList.toggle('active')
+            $('.fplay').classList.toggle('active')           
         }
 
 
